@@ -1,5 +1,5 @@
 {
-  "name": "xizher-js-ext",
+  "name": "@xizher/js-ext",
   "version": "1.0.0",
   "description": "js-ext",
   "main": "dist/index.js",
