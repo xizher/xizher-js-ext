@@ -2,7 +2,8 @@
   "name": "@xizher/js-ext",
   "version": "1.0.0",
   "description": "js-ext",
-  "main": "dist/index.js",
+  "main": "dist-cmj/index.js",
+  "module": "dist/index.js",
   "scripts": {
     "test": "nodemon --exec npx jest jest",
     "build": "npx tsc -w"
