@@ -7,7 +7,7 @@ const array_extension_1 = __importDefault(require("./extension/array.extension")
 const date_extension_1 = __importDefault(require("./extension/date.extension"));
 const number_extension_1 = __importDefault(require("./extension/number.extension"));
 const string_extension_1 = __importDefault(require("./extension/string.extension"));
-function $ext(_this) {
+function ext(_this) {
     if (_this instanceof Date) {
         return date_extension_1.default(_this);
     }
@@ -21,4 +21,4 @@ function $ext(_this) {
         return array_extension_1.default(_this);
     }
 }
-exports.default = $ext;
+exports.default = ext;

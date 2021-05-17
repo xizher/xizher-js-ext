@@ -3,11 +3,11 @@ import extDate, { IDateExtension } from './extension/date.extension'
 import extNumber, { INumberExtension } from './extension/number.extension'
 import extString, { IStringExtension } from './extension/string.extension'
 
-function $ext (date: Date) : IDateExtension
-function $ext (str: string) : IStringExtension
-function $ext (num: number) : INumberExtension
-function $ext<T> (arr: T[]) : IArrayExtension<T>
-function $ext<T> (
+function ext (date: Date) : IDateExtension
+function ext (str: string) : IStringExtension
+function ext (num: number) : INumberExtension
+function ext<T> (arr: T[]) : IArrayExtension<T>
+function ext<T> (
   _this: Date | string | number | T[]
 ) : IDateExtension | IStringExtension | INumberExtension | IArrayExtension<T> {
   if (_this instanceof Date) {
@@ -24,4 +24,4 @@ function $ext<T> (
   }
 }
 
-export default $ext
+export default ext
