@@ -1,7 +1,8 @@
-import { IArrayExtension } from './extension/array.extension';
-import { IDateExtension } from './extension/date.extension';
-import { INumberExtension } from './extension/number.extension';
-import { IStringExtension } from './extension/string.extension';
+import extArray, { IArrayExtension } from './extension/array.extension';
+import extDate, { IDateExtension } from './extension/date.extension';
+import extNumber, { INumberExtension } from './extension/number.extension';
+import extString, { IStringExtension } from './extension/string.extension';
+export { extArray, extDate, extNumber, extString, IArrayExtension, IDateExtension, INumberExtension, IStringExtension, };
 declare function ext(date: Date): IDateExtension;
 declare function ext(str: string): IStringExtension;
 declare function ext(num: number): INumberExtension;

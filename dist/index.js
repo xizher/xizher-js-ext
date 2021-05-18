@@ -2,6 +2,7 @@ import extArray from './extension/array.extension';
 import extDate from './extension/date.extension';
 import extNumber from './extension/number.extension';
 import extString from './extension/string.extension';
+export { extArray, extDate, extNumber, extString, };
 function ext(_this) {
     if (_this instanceof Date) {
         return extDate(_this);
